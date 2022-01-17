@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iMarbles</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="gameArea">
+    <div id="gamecontainer">
+      <div id="gamestartscreen" class="gamelayer">
+        <button type="button" id="restartbtn">next level!</button>
+      </div>
+      <progress id="power" max="12000" value="0"></progress>
+      <canvas id="myCanvas" width="1280" height="720" tabindex='1'></canvas>
+    </div>
+  </div>
+</body>
+<footer>
+  <script src="js/Vector2.js" type="text/javascript"></script>
+  <script src="js/input/ButtonState.js" type="text/javascript"></script>
+  <script src="js/input/Mouse.js" type="text/javascript"></script>
+  <script src="js/Canvas.js" type="text/javascript"></script>
+  <script src="js/Color.js" type="text/javascript"></script>
+  <script src="js/CONSTANTS.js" type="text/javascript"></script>
+  <script src="js/Assets.js" type="text/javascript"></script>
+  <script src="js/Marble.js" type="text/javascript"></script>
+  <script src="js/Location.js" type="text/javascript"></script>
+  <script src="js/GameWorld.js" type="text/javascript"></script>
+  <script src="js/Game.js" type="text/javascript"></script>
+  <script>
+    loadAssets(MarbleGame.start);
+  </script>
+</footer>
+</html>

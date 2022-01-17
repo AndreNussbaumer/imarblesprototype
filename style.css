@@ -1,0 +1,59 @@
+body {
+  user-select: none;
+}
+
+progress {
+  width: 170px;
+  height: 8px;
+}
+
+progress::-webkit-progress-value {
+  background: #ff004c;
+}
+
+progress::-moz-progress-bar {
+  background: #ff004c;
+}
+
+#myCanvas {
+  border: 1px;
+}
+
+#gameArea {
+  position: relative;
+}
+
+#gamecontainer {
+  /* Set game container width, height, and background */
+  width: 1280px;
+  height: 720px;
+}
+
+#power {
+
+  position: absolute;
+  top: 43vh;
+  right: 37.2vw;
+  display: none;
+}
+
+#gamestartscreen {
+  display: none;
+  text-align: center;
+  z-index: 100;
+}
+
+#gamestartscreen img {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.gamelayer {
+
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+
+}
+
